@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "pythonArgs": [ "-Wd" ],
+            "justMyCode": false,
+            "args": [],
+            "env": {}
+        },
+        {
+            "name": "Python Debugger: main.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/BA/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "pythonArgs": [ "-Wd" ],
+            "args": [],
+            "env": {},
+        },
+    ]
+}

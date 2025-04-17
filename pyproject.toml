@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "ba"
+version = "1.0.0"
+description = "Code for the lab course digital image processing"
+authors = ["Soeren Kottner <Soeren.Kottner@student.uni-siegen.de>"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+
+#[tool.poetry.group.dev]
+#optional = true
+
+#[tool.poetry.group.dev.dependencies]
+#black = "^24.10.0"
+#debugpy = "^1.8.6"
+#isort = "^5.13.2"
+#pyright = "^1.1.383"
+#ruff = "^0.7.3"
+
+tensorboard = "^2.18.0"
+matplotlib = "^3.10.0"
+ipykernel = "^6.29.5"
+pandas = "^2.2.3"
+torch = "^2.5.1"
+torchvision = "^0.20.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+debugpy = "^1.8.12"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+#[tool.poetry.scripts]
+#BA = "main:main"
+
+[tool.black]
+include = "BA/.*\\.py"
+
+[tool.isort]
+profile = "black"
+src_paths = ["BA"]
+line_length = 88
+lines_after_imports = 2

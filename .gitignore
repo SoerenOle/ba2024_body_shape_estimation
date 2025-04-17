@@ -1,0 +1,7 @@
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/launch.json
+!/.vscode/tasks.json
+/**/__pycache__/
+/.ruff_cache/
+/logs/
